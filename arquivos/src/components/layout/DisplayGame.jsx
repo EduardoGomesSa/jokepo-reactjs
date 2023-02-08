@@ -1,7 +1,19 @@
+import { useEffect, useState } from 'react'
 import styles from '../../styles/DisplayGame.module.css'
 import MoveLocation from '../game/MoveLocation'
 
 export default function DisplayGame(){
+    const [move, setMove] = useState('images/jokepo.png')
+
+    function play(address){
+        return address
+    }
+
+    useEffect(() => {
+        const address = play()
+        setMove(address)
+    }, [])
+
     return (
         <div className={styles.displaygame}>
             <div>
@@ -9,7 +21,7 @@ export default function DisplayGame(){
             </div>
             <h1>VS</h1>
             <div>
-                <MoveLocation imgAddress='images/jokepo.png'></MoveLocation>
+                <MoveLocation imgAddress={move} onChange={address => setMove(address)}></MoveLocation>
             </div> 
             <div className={styles.div}>
                 <MoveLocation imgAddress='images/pedra.png'></MoveLocation>
