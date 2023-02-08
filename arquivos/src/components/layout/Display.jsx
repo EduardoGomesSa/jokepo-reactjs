@@ -1,7 +1,7 @@
-import styles from '../styles/Display.module.css'
-import DisplayGame from '../components/DisplayGame'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import styles from '../../styles/Display.module.css'
+import DisplayGame from '../layout/DisplayGame'
+import Header from './Header'
+import Footer from './Footer'
 
 export default function Display(){
     return (
