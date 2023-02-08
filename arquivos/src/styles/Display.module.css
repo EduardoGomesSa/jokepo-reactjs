@@ -1,6 +1,5 @@
 .display {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 6rem;
@@ -8,4 +7,6 @@
     height: 100vh;
     background-color: aquamarine;
 }
+
+
 

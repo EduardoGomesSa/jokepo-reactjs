@@ -8,3 +8,7 @@
     margin: 10px;
     background-color: brown;
 }
+
+.div {
+    display: flex;
+}
