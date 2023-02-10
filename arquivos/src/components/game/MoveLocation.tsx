@@ -8,7 +8,7 @@ interface MoveLocationProps{
 export default function MoveLocation(props: MoveLocationProps){
     var add = props.imgAddress
     const select = () =>{
-        //props.onChange(add = props.imgAddress)
+        props.onChange(add = props.imgAddress)
     }
 
     return (
