@@ -24,7 +24,7 @@ export default function DisplayGame(){
                 <MoveLocation imgAddress={move} onChange={address => setMove(address)}></MoveLocation>
             </div> 
             <div className={styles.div}>
-                <MoveLocation imgAddress='images/pedra.png'></MoveLocation>
+                <MoveLocation imgAddress='images/pedra.png' play={1}></MoveLocation>
                 <MoveLocation imgAddress='images/papel.png'></MoveLocation>
                 <MoveLocation imgAddress='images/tesoura.png'></MoveLocation>
             </div> 
