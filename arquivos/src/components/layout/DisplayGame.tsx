@@ -4,14 +4,11 @@ import MoveLocation from '../game/MoveLocation'
 
 interface DisplayGameProps{
     onChange?: (address: string) => void
+    a: string
 }
 
 export default function DisplayGame(props:DisplayGameProps){
     const [move, setMove] = useState('images/jokepo.png')
-
-    useEffect(() => {
-        setMove
-    }, [])
 
     return (
         <div className={styles.displaygame}>
