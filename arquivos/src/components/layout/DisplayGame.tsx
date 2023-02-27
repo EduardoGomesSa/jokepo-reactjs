@@ -4,7 +4,6 @@ import MoveLocation from '../game/MoveLocation'
 
 interface DisplayGameProps{
     onChange?: (address: string) => void
-    a: string
 }
 
 export default function DisplayGame(props:DisplayGameProps){
@@ -20,9 +19,9 @@ export default function DisplayGame(props:DisplayGameProps){
                 <MoveLocation imgAddress={move} onChange={e => setMove(e)}></MoveLocation>
             </div> 
             <div className={styles.div}>
-                <MoveLocation imgAddress='images/pedra.png' play={1}></MoveLocation>
-                <MoveLocation imgAddress='images/papel.png' play={2}></MoveLocation>
-                <MoveLocation imgAddress='images/tesoura.png' play={3}></MoveLocation>
+                <MoveLocation imgAddress='images/pedra.png'></MoveLocation>
+                <MoveLocation imgAddress='images/papel.png'></MoveLocation>
+                <MoveLocation imgAddress='images/tesoura.png'></MoveLocation>
             </div> 
         </div>
     )
