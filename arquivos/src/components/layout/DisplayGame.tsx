@@ -8,7 +8,6 @@ interface DisplayGameProps{
 
 export default function DisplayGame(props:DisplayGameProps){
     const [move, setMove] = useState('images/jokepo.png')
-
     return (
         <div className={styles.displaygame}>
             <div>
@@ -16,12 +15,12 @@ export default function DisplayGame(props:DisplayGameProps){
             </div>
             <h1>VS</h1>
             <div>
-                <MoveLocation imgAddress={move} onChange={e => setMove(e)}></MoveLocation>
+                <MoveLocation imgAddress={move} onChange={e => move}></MoveLocation>
             </div> 
             <div className={styles.div}>
-                <MoveLocation imgAddress='images/pedra.png'></MoveLocation>
-                <MoveLocation imgAddress='images/papel.png'></MoveLocation>
-                <MoveLocation imgAddress='images/tesoura.png'></MoveLocation>
+                <MoveLocation imgAddress='images/pedra.png' onChange={e => setMove('images/pedra.png')}></MoveLocation>
+                <MoveLocation imgAddress='images/papel.png' onChange={e => setMove('images/papel.png')}></MoveLocation>
+                <MoveLocation imgAddress='images/tesoura.png' onChange={e => setMove('images/tesoura.png')}></MoveLocation>
             </div> 
         </div>
     )
