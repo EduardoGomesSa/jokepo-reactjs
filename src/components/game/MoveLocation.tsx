@@ -8,7 +8,7 @@ interface MoveLocationProps{
 export default function MoveLocation(props: MoveLocationProps){
     return (
         <div className={styles.moveLocation}>
-            <img src={props.imgAddress} alt=""/>
+            <img src={props.imgAddress} alt="imagem da jogada escolhida pelo usuario"/>
         </div>
     )
 }
